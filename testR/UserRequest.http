@@ -1,11 +1,11 @@
 ### Get User Profile
-GET http://localhost:8080/api/users/cfe12c4a-76b9-4fbf-a5f2-30113fcfc640
+GET http://localhost:8081/api/users/cfe12c4a-76b9-4fbf-a5f2-30113fcfc640
 Content-Type: application/json
 
 
 ### Create a New User
 ### ,
-POST http://localhost:8080/api/users/register
+POST http://localhost:8081/api/users/register
 Content-Type: application/json
 
 {

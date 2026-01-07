@@ -12,7 +12,9 @@ import org.springframework.data.mongodb.core.mapping.Field;
 import lombok.Builder;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
+@NoArgsConstructor
 @Document(collection = "activities")
 @Data
 @Builder
@@ -20,7 +22,7 @@ import lombok.Data;
 public class Activity {
     @Id
     private String id;
-    private String userID;
+    private String userId;
     private ActivityType type;
     private Integer duration;
     private Integer caloriesBurned;
