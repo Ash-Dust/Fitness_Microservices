@@ -1,0 +1,2 @@
+GET http://localhost:8082/api/activities/695e311b4d5c428d2150ff0a
+Content-Type: application/json

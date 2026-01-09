@@ -10,6 +10,7 @@ import lombok.RequiredArgsConstructor;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import org.jspecify.annotations.Nullable;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -51,5 +52,11 @@ public class ActivityService {
         return activities.stream()
             .map(this::mapToResponse)
             .collect(Collectors.toList());
+    }
+
+    public ActivityResponse getActivityById(String activityId) {
+        return activityRepository.findById(activityId)
+            .map(this::mapToResponse)
+            .orElseThrow(() -> new RuntimeException("Activity not found with id: " + activityId));
     }
 }
