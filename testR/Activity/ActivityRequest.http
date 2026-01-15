@@ -2,7 +2,7 @@ POST http://localhost:8082/api/activities
 Content-Type: application/json
 
 {
-    "userId" : 1,
+    "userId" : "cfe12c4a-76b9-4fbf-a5f2-30113fcfc640",
     "type" : "SWIMMING",
     "duration" : 30,
     "caloriesBurned" : 400,

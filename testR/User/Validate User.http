@@ -1,0 +1,5 @@
+### Get Validate User
+GET http://localhost:8081/api/users/cfe12c4a-76b9-4fbf-a5f2-30113fcfc640/validate
+Content-Type: application/json
+
+
