@@ -1,0 +1,5 @@
+GET http://localhost:8083/api/recommendations/user/cfe12c4a-76b9-4fbf-a5f2-30113fcfc640
+Content-Type: application/json
+
+GET http://localhost:8083/api/recommendations/activity/1
+Content-Type: application/json
